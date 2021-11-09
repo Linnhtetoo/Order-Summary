@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+:root {
+    /*Primary Colors*/
+    --pale_blue: hsl(225, 100%, 94%);
+    --bright_blue: hsl(245, 75%, 52%);
+    /*Neutral Colors*/
+    --very_pale_blue: hsl(225, 100%, 98%);
+    --desaturated_blue: hsl(224, 23%, 55%);
+    --dark_blue: hsl(223, 47%, 23%);
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    color: var(--dark_blue);
+    background: url("images/pattern-background-desktop.svg"), var(--pale_blue);
+    background-repeat: no-repeat;
+    display: grid;
+    height: 100vh;
+}
+
+#wrapper {
+    margin: auto;
+    background-color: white;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+
+}
+
+img.hero {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+}
+
+header {
+    width: 80%;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+p.desaturated-blue {
+    color: var(--desaturated_blue)
+}
+
+div.container {
+    box-sizing: border-box;
+    background-color: var(--very_pale_blue);
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1em 1.5em;
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+
+div.middle {
+    box-sizing: border-box;
+    width: 60%;
+    margin-left: 1.5em;
+}
+
+h2 {
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 900;
+}
+
+p.desaturated-blue {
+    margin: 0;
+}
+
+div.footer {
+    width: 80%;
+    margin: 2rem auto 2rem auto;
+    text-align: center;
+}
+
+div.btn {
+    background-color: var(--bright_blue);
+    padding: 1em;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 20px 15px var(--pale_blue);
+    margin-bottom: 2em;
+}
+
+div.btn:hover {
+    background-color: purple;
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+p.cancel {
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+p.cancel:hover {
+    color: var(--dark_blue);
+    cursor: pointer;
+}
+
+p.change {
+    color: var(--bright_blue);
+    text-decoration: underline;
+}
+
+p.change:hover {
+    color: purple;
+    cursor: pointer;
+}
+
+@media (max-width: 375px) {
+    body {
+        background-color: var(--pale_blue);
+    }
+
+    #wrapper {
+        width: 90vw;
+        margin: inherit auto;
+        text-align: center;
+    }
+
+    div.middle {
+        margin-left: 0.1em;
+    }
+}
+
